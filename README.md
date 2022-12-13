@@ -11,5 +11,6 @@
 4. Add color to the click function results and use search click function with: ./hf-dataset-query.py query 'imdb' --limit 5 --sort True
 5. Click function for datasets "inspection": ./hf_dataset_query.py inspect imdb --column train --rows 5
 6. Load two datasets: "imdb" and "rotten_tomatoes" and save into two separate csv in the "data" directory using the save_to_csv function and save_datasets.py file. 
+7. Merged two datasets to combined_movie_reviews.csv using merge_datasets.py
 
 
