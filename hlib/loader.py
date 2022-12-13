@@ -20,8 +20,38 @@ def inspect_data(dataset, column="train", rows=5):
     data = dataset[column][0:rows]
     return data
 
+
+# save the loaded datasets to different csv files in a new directory
+def save_to_csv(dataset, path, column="train"):
+    """Save a dataset to csv"""
+
+    # load dataset
+    dataset = load_dataset(dataset)
+    # get first 5 rows of first split
+    data = dataset[column]
+    # save to csv
+    data.to_csv(path, index=False)
+    return data
+
+# # save the loaded dataset to csv in a new directory
+# def save_to_csv(dataset, column="train"):
+#     """Save a dataset to csv"""
+
+#     # load dataset
+#     dataset = load_dataset(dataset)
+#     # get first 5 rows of first split
+#     data = dataset[column]
+#     # save to csv
+#     data.to_csv("data.csv", index=False)
+#     return data
+
+
+
+
+
 # load rotten tomatoes dataset
 # rotten_tomatoes = load_dataset("rotten_tomatoes")
 
 # print the first row in the training set for the rotten tomatoes dataset
 # print(rotten_tomatoes["train"][0])
+
