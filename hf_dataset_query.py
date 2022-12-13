@@ -30,7 +30,7 @@ def cli():
 def query(pattern, limit, sort):
     """Search for a Hugging Face dataset by name or description.
 
-    Example: ./hf-dataset-query.py query 'squad' --limit 5 --sort True
+    Example: ./hf-dataset-query.py query 'imdb' --limit 5 --sort True
     """
 
     datasets = search(pattern, limit, sort)

@@ -8,5 +8,5 @@
 1. Build a search tool for looking for datasets
 2. Build a datset inspection function
 3. Click function for datasets search in hf_dataset_query.py: chmod +x hf_dataset_query.py
-4. Add color to the click function results
+4. Add color to the click function results and use click function with: ./hf-dataset-query.py query 'imdb' --limit 5 --sort True
 2. Loaded two datasets from HuggingFace
