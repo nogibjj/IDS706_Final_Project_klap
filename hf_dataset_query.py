@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-from hlib.loader import search, inspect_data
+from hlib.loader import search
 import click
 from random import choice
 
@@ -42,4 +42,3 @@ def query(pattern, limit, sort):
 
 if __name__ == "__main__":
     cli()
-

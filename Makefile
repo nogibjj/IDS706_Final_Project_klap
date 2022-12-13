@@ -3,14 +3,20 @@ install:
 		pip install -r Requirements.txt
 
 test:
-	python -m pytest -vv test_*.py
+	python -m pytest -vv --cov=main --cov=mylib test_*.py
 
-format:
-	black hlib/*.py 
-	
-#refactor: format lint
+format:	
+	black *.py 
 
 lint:
-	pylint --disable=R,C --ignore-patterns=test_.*?py hlib/*.py 
+	pylint --disable=R,C --ignore-patterns=test_.*?py *.py hlib/*.py
 
-all: install lint test
+container-lint:
+	docker run --rm -i hadolint/hadolint < Dockerfile
+
+refactor: format lint
+
+deploy:
+	#deploy goes here
+		
+all: install lint test format deploy
