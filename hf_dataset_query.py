@@ -39,6 +39,7 @@ def query(pattern, limit, sort):
         # print colored dataset name
         print(click.style(dataset, fg=next(color)))
 
+
 # build click command
 @cli.command("inspect")
 @click.argument("dataset")
@@ -56,4 +57,3 @@ def inspect(dataset, column, rows):
 
 if __name__ == "__main__":
     cli()
-
