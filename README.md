@@ -14,3 +14,14 @@
 7. Merged two datasets to combined_movie_reviews.csv using merge_datasets.py
 
 
+## NEXT STEPS - EDA & FASTAPI
+1. Performed basic EDA on the merged dataset - EDA.py
+2. Created data_generator.py function that returns only 1000 rows of the dataset (Can be used for AWS )
+3. Created a FastAPI application - Uvicorn (Linked to the movie reviews dataset) with 4 endpoints:
+    I. Displays Welcome message
+    II. Returns Random Records - /random
+    III. Returns a Random Negatively or Positively (0 or 1) labelled data row - /random/{0} or /random/{1}
+    IV. Returns a review containing a particular word  - /find/{word}
+
+
+
