@@ -9,11 +9,9 @@ def sample_generator(source, size):
     df_sample = df_sample.drop(columns=["label"])
     return df_sample
 
-
 file = sample_generator("imdb", 1)
 # save file as txt
 file.to_csv("sample.txt", sep="\t", index=False)
-
 
 # if __name__ == "__main__":
 #     print(sample_generator())
