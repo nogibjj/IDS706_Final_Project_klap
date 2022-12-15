@@ -1,22 +1,22 @@
-#import pandas as pd
+# import pandas as pd
 from reviews.src.movie_reviews.generate_reviews import generate
 
 # # create a function that randomly generates sample of 10 rows from the imdb dataset
 def sample_generator(source, size):
     df_sample = generate(source, size)
-    #remove label column from df_sample
-    df_sample = df_sample.drop(columns=['label'])
+    # remove label column from df_sample
+    df_sample = df_sample.drop(columns=["label"])
     return df_sample
 
 
 file = sample_generator("imdb", 1)
-#save file as txt
-file.to_csv("sample.txt", sep='\t', index=False)
+# save file as txt
+file.to_csv("sample.txt", sep="\t", index=False)
 
 
 # if __name__ == "__main__":
 #     print(sample_generator())
-#generate a random sample of 5 rows from source = imdb and 5 rows from source = rt
+# generate a random sample of 5 rows from source = imdb and 5 rows from source = rt
 # def sample_generator2():
 #     df_sample2 = generate("imdb", 10)
 #     df_sample3 = generate("rt", 10)
@@ -30,10 +30,10 @@ file.to_csv("sample.txt", sep='\t', index=False)
 # print(df)
 
 # using pandas to read the csv file
-#df = pd.read_csv('combined_movie_reviews.csv')
+# df = pd.read_csv('combined_movie_reviews.csv')
 
-#df.head()
-# 
+# df.head()
+#
 # print(df)
 # # # create a function that randomly generates sample of 1000 rows
 # def sample_generator():
