@@ -3,13 +3,13 @@ from reviews.src.movie_reviews.generate_reviews import generate
 
 # # create a function that randomly generates sample of 10 rows from the imdb dataset
 def sample_generator(source, size):
-    df_sample = generate("imdb", 10)
+    df_sample = generate(source, size)
     #remove label column from df_sample
     df_sample = df_sample.drop(columns=['label'])
     return df_sample
 
 
-file = sample_generator("imdb", 10)
+file = sample_generator("imdb", 1)
 #save file as txt
 file.to_csv("sample.txt", sep='\t', index=False)
 
