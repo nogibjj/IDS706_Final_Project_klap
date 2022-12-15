@@ -1,5 +1,5 @@
 # import pandas as pd
-#from reviews.src.movie_reviews.generate_reviews import generate
+# from reviews.src.movie_reviews.generate_reviews import generate
 from movie_reviews import generate
 
 # # create a function that randomly generates sample of 10 rows from the imdb dataset
