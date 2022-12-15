@@ -2,11 +2,11 @@ import os
 import boto3
 from botocore.client import Config
 
-ACCESS_KEY_ID = AWS_ACCESS_KEY_ID #From AWS Account
-ACCESS_SECRET_KEY = AWS_SECRET_ACCESS_KEY #From AWS Account
+ACCESS_KEY_ID = "AWS_ACCESS_KEY_ID" #From AWS Account
+ACCESS_SECRET_KEY = "AWS_SECRET_ACCESS_KEY" #From AWS Account
 BUCKET_NAME = 'klap-senti-bucket' #Add the Bucket name here
 
-path = '/workspaces/IDS706_Final_Project_klap/sample.txt' #Ooperting system path where you want to upload the files/full path 
+path = '/workspaces/IDS706_Final_Project_klap' #Ooperting system path where you want to upload the files/full path 
 print(os.listdir(path))
 for filename in os.listdir(path):
     data = open(path + '/' + filename, 'rb')
