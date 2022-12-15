@@ -1,9 +1,10 @@
 # import pandas as pd
-from reviews.src.movie_reviews.generate_reviews import generate
+#from reviews.src.movie_reviews.generate_reviews import generate
+from movie_reviews import generate
 
 # # create a function that randomly generates sample of 10 rows from the imdb dataset
 def sample_generator(source, size):
-    df_sample = generate(source, size)
+    df_sample = generate.generate_reviews(source, size)
     # remove label column from df_sample
     df_sample = df_sample.drop(columns=["label"])
     return df_sample
