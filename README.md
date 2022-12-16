@@ -1,9 +1,7 @@
 # IDS706 Final Project
 ## Team: Kashaf Ali, Lorna Maria Aine, Pragya Raghuvanshi, and Aadila Jasmin
 
-[![Python application test with Github Actions](https://github.com/nogibjj/IDS706_Final_Project_klap/actions/workflows/main.yml/badge.svg)](https://github.com/nogibjj/IDS706_Final_Project_klap/actions/workflows/main.yml)
-
-[![AWS CodeBuild](https://codebuild.us-east-1.amazonaws.com/badges?uuid=eyJlbmNyeXB0ZWREYXRhIjoiU2ROSm1SNmlnMUhhc29VdXA0N1c1bkVmcUNzV1BhZ2FEb3RIZ003MVNQRmNwMVJBOXJkemczWS9BczVDQjZQVVA2b2NzUW5zeEU1ZUw2d1JKVXB3VjhFPSIsIml2UGFyYW1ldGVyU3BlYyI6ImZoYXBnZjBPU0FOTXlnN3MiLCJtYXRlcmlhbFNldFNlcmlhbCI6MX0%3D&branch=main)
+[![Python application test with Github Actions](https://github.com/nogibjj/IDS706_Final_Project_klap/actions/workflows/main.yml/badge.svg)](https://github.com/nogibjj/IDS706_Final_Project_klap/actions/workflows/main.yml) [![AWS CodeBuild](https://codebuild.us-east-1.amazonaws.com/badges?uuid=eyJlbmNyeXB0ZWREYXRhIjoieDE0Qkc1R1NqdEowaERYeXhmbThIVHZOeXJWLzFpTCtDZXUrU1dZMTJDNjFMaUZwMjhtMjhFeHg0Rnl1Q3VEWkU0ZzVHL3hLQXpmdzloTldxcFFPd3RZPSIsIml2UGFyYW1ldGVyU3BlYyI6IklQS1VGMVdHaVZrN3FwdWoiLCJtYXRlcmlhbFNldFNlcmlhbCI6MX0%3D&branch=main)
 
 ![image](https://user-images.githubusercontent.com/67281453/208021407-1e37af79-cb6a-4fae-9564-744e256178e1.png)
 
