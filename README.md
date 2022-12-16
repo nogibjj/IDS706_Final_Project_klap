@@ -38,6 +38,10 @@
     II. Returns Random Records - /random
     III. Returns a Random Negatively or Positively (0 or 1) labelled data row - /random/{0} or /random/{1}
     IV. Returns a review containing a particular word  - /find/{word}
+    
+    
+  
+## THANK YOU!
 
 
 
