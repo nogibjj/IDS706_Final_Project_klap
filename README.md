@@ -7,6 +7,12 @@
 
 ![image](https://user-images.githubusercontent.com/67281453/208021407-1e37af79-cb6a-4fae-9564-744e256178e1.png)
 
+## METHODOLOGY
+
+1) Extraction of the Data from Hugging Face, Transformation and Loading to be used in codespace.
+2) Pulling in the package that we created from https://github.com/lornamariak/reviews
+3) Using FASTAPI to create an application that returns a JSON Payload to the User
+4) The end-points are linked to AWS Lambda to perform sentiment analysis.
 
 
 ## HuggingFace Dataset ETL (Extraction, Transformation, Loading):
