@@ -39,8 +39,7 @@ In this project, we used two Hugging Face datasets related to movie reviews to c
     II. Returns Random Records - /random\
     III. Returns a Random Negatively or Positively (0 or 1) labelled data row - /random/{0} or /random/{1}\
     IV. Returns a review containing a particular word  - /find/{word}
-    V. An endpoint, /movie_reviews/{source}/{size}, that pulls response reviews based on the source and number as specified by Client. This is also used to upload the file to the S3 bucket and perform analysis using Amazon Comprehend. 
-    VI. Sentiment analysis performed using FastAPI endpoint, /tests/{r}, is created for a function that receives the user’s inputted list of text and runs it through the AWS Lambda to perform analysis. for predicted classifications.
+  
   
 ## Sentiment Analysis using AWS S3, Lambda and Comprehend
 1. Reviews pulled from the Python package are stored in a text file in the S3 bucket.
