@@ -1,5 +1,5 @@
 # IDS706 Final Project
-# MOVIE REVIEW APPLICATION with SENTIMENT ANALYSIS ON THE CLOUD
+# MOVIE REVIEW APPLICATION with SENTIMENT ANALYSIS 
 ## Team: Kashaf Ali, Lorna Maria Aine, Pragya Raghuvanshi, and Aadila Jasmin
 
 [![Python application test with Github Actions](https://github.com/nogibjj/IDS706_Final_Project_klap/actions/workflows/main.yml/badge.svg)](https://github.com/nogibjj/IDS706_Final_Project_klap/actions/workflows/main.yml) [![AWS CodeBuild](https://codebuild.us-east-1.amazonaws.com/badges?uuid=eyJlbmNyeXB0ZWREYXRhIjoieDE0Qkc1R1NqdEowaERYeXhmbThIVHZOeXJWLzFpTCtDZXUrU1dZMTJDNjFMaUZwMjhtMjhFeHg0Rnl1Q3VEWkU0ZzVHL3hLQXpmdzloTldxcFFPd3RZPSIsIml2UGFyYW1ldGVyU3BlYyI6IklQS1VGMVdHaVZrN3FwdWoiLCJtYXRlcmlhbFNldFNlcmlhbCI6MX0%3D&branch=main)
