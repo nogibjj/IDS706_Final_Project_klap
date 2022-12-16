@@ -19,6 +19,7 @@ async def source(source:str, size:int):
     movie_reviews = sample_generator(source,size)
     return {"movie_reviews":movie_reviews}
 
+
 # save response to a file
 @app.get("/save/{review}")
 async def save(review:str):
