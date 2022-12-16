@@ -36,8 +36,8 @@ async def save(review:str):
     return {"review":result}
 
 
-@app.get("/save/{r}")
-async def save(r:str):
+@app.get("/tests/{r}")
+async def tests(r:str):
     file = open("r.txt", "w")
     file.write(r)
     file.close()
