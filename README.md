@@ -22,7 +22,7 @@
 6. Load two datasets: "imdb" and "rotten_tomatoes" and save into two separate csv in the "data" directory using the save_to_csv function and save_datasets.py file. 
 7. Merged two datasets to combined_movie_reviews.csv using merge_datasets.py
 
-## [movie-reviews 0.0.2](https://github.com/lornamariak/movie-reviews)
+## Building a Python Package: [movie-reviews 0.0.2](https://github.com/lornamariak/movie-reviews)
 1. Loaded combined_movie_reviews.csv 
 2. created python package 
 3. published to PyPI
@@ -39,6 +39,23 @@
     V. An endpoint, /movie_reviews/{source}/{size}, that pulls response reviews based on the source and number as specified by Client. This is also used to upload the file to the S3 bucket and perform analysis using Amazon Comprehend. 
     VI. Sentiment analysis performed using FastAPI endpoint, /tests/{r}, is created for a function that receives the user’s inputted list of text and runs it through the AWS Lambda to perform analysis. for predicted classifications.
   
+## Sentiment Analysis using AWS S3, Lambda and Comprehend
+
+
+
+## FastAPI Connection to AWS
+
+
+
+## Continuous Integration & Continuous Delivery
+1. Continuous Integration: We have Github Actions to ensure with CI with every commit, and we also use a Makefile to manually check this.
+2. Continuous Delivery: We used an ECR Repository and CodeBuild to ensure CD (due to resource constraints we were not able to keep it live, but our build was successful).
+
+<img width="397" alt="image" src="https://user-images.githubusercontent.com/111402572/208028248-b44a9a6a-762d-4ff1-aa0e-a95084a53401.png">
+
+
+
+
 ## THANK YOU!
 
 
