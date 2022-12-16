@@ -3,6 +3,7 @@ import uvicorn
 from pull_data import sample_generator
 from fastapi.responses import JSONResponse
 from pydantic import BaseModel
+import pandas as pd
 
 app = FastAPI()
 
@@ -23,7 +24,12 @@ async def save(review:str):
     file = open("review.txt", "w")
     file.write(review)
     file.close()
+    df_send = pd.read_csv("review.txt")
+    df_send.to_csv(
+    "s3://myklapbucket/file.txt",
+    storage_options={"key": aws_access_key_id, "secret": aws_secret_access_key},)
     return {"review":review}
+
 
 
 if __name__ == "__main__":
