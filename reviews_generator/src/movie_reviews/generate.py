@@ -4,7 +4,7 @@ import pandas as pd
 
 #open file 
 my_path = os.path.abspath(os.path.dirname(__file__))
-path = os.path.join(my_path, "../data/combined_movie_reviews.csv")
+path = os.path.join(my_path,"./data/combined_movie_reviews.csv")
 f = open(path)
 
 #read it using pandas
