@@ -3,6 +3,7 @@ from fastapi import FastAPI
 import uvicorn
 from pull_data import sample_generator
 import pandas as pd
+from upload import get_sent
 
 # import smart_open
 
@@ -57,9 +58,10 @@ async def site(source: str, size: int):
 async def tests(r: str):
     with open("r.txt", "w", encoding="UTF-8") as file:
         file.write(r)
+    # df_send = pd.read_csv("r.txt")  
+    # sent the sentence to fucntion giving sentiment value  
+    result = get_sent()
     # read t.txt file
-    with open("t.txt", "r", encoding="UTF-8") as df_pull:
-        result = df_pull.read()
     # # save output of the dataframe to a variable
     # result = df_pull.read()
     # df_pull.close()

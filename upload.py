@@ -49,3 +49,7 @@ df.to_csv(
 #     print("File Removed!")
 
 # print("Done")
+def get_sent():
+    with open("t.txt", "r", encoding="UTF-8") as df_pull:   
+        result = df_pull.read()
+    return result
