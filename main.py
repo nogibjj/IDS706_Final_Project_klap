@@ -1,8 +1,8 @@
 from fastapi import FastAPI
 import uvicorn
 from pull_data import sample_generator
-from fastapi.responses import JSONResponse
-from pydantic import BaseModel
+
+from new import get_sentiment
 
 
 app = FastAPI()
@@ -41,9 +41,9 @@ async def source(source:str, size:int):
 
 
 @app.get("/get_sentiment/{sentiment}")
-async def getsent(senti:str):
-   get= get_sentiment(senti)
-   return 
+async def getsent(sentiment:str):
+   sentiment= sentiment(senti)
+   return sentiment
 
 
 # end point 3: list a random row of the dataset with a specific label 0 or 1 (negativw or positive)
@@ -57,12 +57,9 @@ async def get_random_label(label: int):
 async def get_random_word(word: str):
     return df[df["text"].str.contains(word)].sample(1).to_dict("records")
 
-review: str
 
-@app.post("/items/")
-async def get_sent(senti):
-    get_sent= get_sent(senti)
-    return item
+
+
 
 if __name__ == "__main__":
     uvicorn.run(app, port=8080, host="0.0.0.0")
