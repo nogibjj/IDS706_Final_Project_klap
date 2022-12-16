@@ -13,7 +13,7 @@
 6. Load two datasets: "imdb" and "rotten_tomatoes" and save into two separate csv in the "data" directory using the save_to_csv function and save_datasets.py file. 
 7. Merged two datasets to combined_movie_reviews.csv using merge_datasets.py
 
-## [!movie-reviews 0.0.2](https://github.com/lornamariak/movie-reviews)
+## [movie-reviews 0.0.2](https://github.com/lornamariak/movie-reviews)
 1. Loaded combined_movie_reviews.csv 
 2. created python package 
 3. published to PyPI
