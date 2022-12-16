@@ -2,9 +2,6 @@ install:
 	pip install --upgrade pip &&\
 		pip install -r Requirements.txt
 
-test:
-	python -m pytest -vv --cov=main --cov=mylib test_*.py
-
 format:	
 	black *.py 
 
@@ -26,9 +23,9 @@ run:
 deploy:
 	#deploy goes here
 	aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 318295413266.dkr.ecr.us-east-1.amazonaws.com
-	docker build -t klap .
-	docker tag klap:latest 318295413266.dkr.ecr.us-east-1.amazonaws.com/klap:latest
-	docker push 318295413266.dkr.ecr.us-east-1.amazonaws.com/klap:latest
+	docker build -t klapproject .
+	docker tag klapproject:latest 318295413266.dkr.ecr.us-east-1.amazonaws.com/klapproject:latest
+	docker push 318295413266.dkr.ecr.us-east-1.amazonaws.com/klapproject:latest
 		
 all: install lint test format deploy
 
