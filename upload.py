@@ -13,14 +13,14 @@ BUCKET_NAME = "myklapbucket"  # Add the Bucket name here
 aws_access_key_id = os.environ["AWS_ACCESS_KEY_ID"]
 aws_secret_access_key = os.environ["AWS_SECRET_ACCESS_KEY"]
 
-# df = pd.read_csv("sample.txt")
+df = pd.read_csv("sample.txt")
 
-# df.to_csv(
-#     "s3://myklapbucket/file.txt",
-#     storage_options={"key": aws_access_key_id, "secret": aws_secret_access_key},
-# )
+df.to_csv(
+    "s3://myklapbucket/file.txt",
+    storage_options={"key": aws_access_key_id, "secret": aws_secret_access_key},
+)
 
-df2 = pd.read_csv("review.txt")
+# df2 = pd.read_csv("review.txt")
 
 # def get_sent(review):
 #     review.to_csv(
@@ -32,10 +32,6 @@ df2 = pd.read_csv("review.txt")
 #     )
 
 # sentiment = get_sent(df)
-
-
-sentiment = get_sent(df)
-
 
 
 # path = '/workspaces/IDS706_Final_Project_klap' #Ooperting system path where you want to upload the files/full path
