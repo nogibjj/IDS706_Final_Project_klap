@@ -4,7 +4,7 @@
 
 [![Python application test with Github Actions](https://github.com/nogibjj/IDS706_Final_Project_klap/actions/workflows/main.yml/badge.svg)](https://github.com/nogibjj/IDS706_Final_Project_klap/actions/workflows/main.yml) [![AWS CodeBuild](https://codebuild.us-east-1.amazonaws.com/badges?uuid=eyJlbmNyeXB0ZWREYXRhIjoieDE0Qkc1R1NqdEowaERYeXhmbThIVHZOeXJWLzFpTCtDZXUrU1dZMTJDNjFMaUZwMjhtMjhFeHg0Rnl1Q3VEWkU0ZzVHL3hLQXpmdzloTldxcFFPd3RZPSIsIml2UGFyYW1ldGVyU3BlYyI6IklQS1VGMVdHaVZrN3FwdWoiLCJtYXRlcmlhbFNldFNlcmlhbCI6MX0%3D&branch=main)
 
-In this project, we used two Hugging Face datasets related to movie to conduct sentiment analysis using AWS S3, AWS Lambda and AWS Comprehend and build web microservice that has an API with Swagger Documentation and performs a query using a Pandas and returns useful information to the user.
+In this project, we used two Hugging Face datasets related to movie reviews to conduct sentiment analysis using AWS S3, AWS Lambda and AWS Comprehend and we also built a web microservice using FastAPI with Swagger Documentation to perform different queries that return useful information to the user.
 
 ![image](https://user-images.githubusercontent.com/67281453/208021407-1e37af79-cb6a-4fae-9564-744e256178e1.png)
 
