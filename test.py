@@ -1,5 +1,4 @@
 from movie_reviews import generate
-from pull_data import sample_generator
 
 
 def test():
