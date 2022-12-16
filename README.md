@@ -33,13 +33,13 @@
 ## NEXT STEPS - EDA & FASTAPI
 1. Performed basic EDA on the merged dataset - EDA.py
 2. Created data_generator.py function that returns only 1000 rows of the dataset (Can be used for AWS )
-3. Created a FastAPI application - Uvicorn (Linked to the movie reviews dataset) with 4 endpoints: \
+3. Created a FastAPI application - Uvicorn (Linked to the movie reviews dataset) with 6 endpoints: \
     I. Displays Welcome message\
     II. Returns Random Records - /random\
     III. Returns a Random Negatively or Positively (0 or 1) labelled data row - /random/{0} or /random/{1}\
     IV. Returns a review containing a particular word  - /find/{word}
-    
-    
+    V. An endpoint, /movie_reviews/{source}/{size}, that pulls response reviews based on the source and number as specified by Client. This is also used to upload the file to the S3 bucket and perform analysis using Amazon Comprehend. 
+    VI. Sentiment analysis performed using FastAPI endpoint, /tests/{r}, is created for a function that receives the user’s inputted list of text and runs it through the AWS Lambda to perform analysis. for predicted classifications.
   
 ## THANK YOU!
 
