@@ -1,12 +1,13 @@
 from fastapi import FastAPI
 import uvicorn
 from pull_data import sample_generator
+from fastapi.responses import JSONResponse
 from pydantic import BaseModel
 
-class Item(BaseModel):
-    sentiment: str
-    
 
+app = FastAPI()
+# class Item(BaseModel):
+#     sentiment: str
 # import json
 
 # reading the dataset
@@ -16,7 +17,7 @@ class Item(BaseModel):
 #     "/workspaces/IDS706_Final_Project_klap/data/combined_movie_reviews.csv"
 # )
 
-app = FastAPI()
+
 
 
 # end points

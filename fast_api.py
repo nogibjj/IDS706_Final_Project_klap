@@ -4,6 +4,7 @@ from pull_data import sample_generator
 from fastapi.responses import JSONResponse
 from pydantic import BaseModel
 import pandas as pd
+import smart_open
 
 app = FastAPI()
 
@@ -24,13 +25,28 @@ async def save(review:str):
     file = open("review.txt", "w")
     file.write(review)
     file.close()
+    #sending the file to s3
     df_send = pd.read_csv("review.txt")
     df_send.to_csv(
     "s3://myklapbucket/file.txt",
     storage_options={"key": aws_access_key_id, "secret": aws_secret_access_key},)
-    return {"review":review}
+    #pulling the file from s3
+    df_pull = pd.read_csv(smart_open('s3://projecttwitterbot/Searching/search_df.csv'), lineterminator='\n')
+    result = print(df_pull)
+    return {"review":result}
 
 
+@app.get("/save/{r}")
+async def save(r:str):
+    file = open("r.txt", "w")
+    file.write(r)
+    file.close()
+    #read t.txt file 
+    df_pull = open("t.txt", "r")
+    # save output of the dataframe to a variable
+    result = df_pull.read()
+    df_pull.close()
+    return {"review":result}
 
 if __name__ == "__main__":
     uvicorn.run(app, port=8080, host="0.0.0.0")
