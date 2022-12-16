@@ -1,3 +1,4 @@
+"""Load reviews in S3 bucket"""
 import os
 
 # import boto3
@@ -20,20 +21,20 @@ df.to_csv(
 )
 
 
+# def get_sent(review):
+#     review.to_csv(
+#         "s3://myklapbucket/file.txt",
+#         storage_options={"key": aws_access_key_id, "secret": aws_secret_access_key},
+#     )
+#     result_df = pd.read_csv(
+#         smart_open("s3://myklapbucket/results.csv"), lineterminator="\n"
+#     )
 
-def get_sent(review)
-    review.to_csv(
-        "s3://myklapbucket/file.txt",
-        storage_options={"key": aws_access_key_id, "secret": aws_secret_access_key},
-    )
-    result_df = pd.read_csv(smart_open('s3://myklapbucket/results.csv'), lineterminator='\n')
+# sentiment = get_sent(df)
 
 
-sentiment = get_sent(df)
-
-
-
-# path = '/workspaces/IDS706_Final_Project_klap' #Ooperting system path where you want to upload the files/full path
+# path = '/workspaces/IDS706_Final_Project_klap'
+#Ooperting system path where you want to upload the files/full path
 # print(os.listdir(path))
 # for filename in os.listdir(path):
 #     data = open(path + '/' + filename, 'rb')
