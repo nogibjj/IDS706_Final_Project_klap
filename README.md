@@ -43,12 +43,20 @@ In this project, we used two Hugging Face datasets related to movie reviews to c
     VI. Sentiment analysis performed using FastAPI endpoint, /tests/{r}, is created for a function that receives the user’s inputted list of text and runs it through the AWS Lambda to perform analysis. for predicted classifications.
   
 ## Sentiment Analysis using AWS S3, Lambda and Comprehend
+1. Reviews pulled from the Python package are stored in a text file in the S3 bucket.
+2. IAM Role is created for appropriate permissions for Comprehend and AWS Lamda.
+3. Amazon comprehend is a natural language processing (NLP) service that uses machine learning technique. It can analyze the text and sentiment of the document.
+4. A Lambda function is created to analyze the text document we uploaded in the S3 bucket. 
+5. In the code Boto3 is being used to call the Comprehend API which performs sentimental analysis.
+6. The code is deployed and tested for results. 
 
 
 
 ## FastAPI Connection to AWS
-
-
+Using FastAPI to draw reviews from Python package and connect to AWS to perform sentimental analysis. 
+1. An endpoint, /movie_reviews/{source}/{size}, that pulls response reviews based on the source and number as specified by Client. This is also used to     upload the file to the S3 bucket and perform analysis using Amazon Comprehend. 
+    
+2. Sentiment analysis performed using FastAPI endpoint, /tests/{r}, is created for a function that receives the user’s inputted list of text and runs     it through the AWS Lambda to perform analysis. for predicted classifications.
 
 ## Continuous Integration & Continuous Delivery
 1. Continuous Integration: We have Github Actions to ensure with CI with every commit, and we also use a Makefile to manually check this.
