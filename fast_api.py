@@ -23,7 +23,9 @@ async def save(review:str):
     file = open("review.txt", "w")
     file.write(review)
     file.close()
-    return {"review":review}
+    df = get_sent(review)
+    result = open("result.txt", "r")
+    return {"review":result}
 
 
 if __name__ == "__main__":

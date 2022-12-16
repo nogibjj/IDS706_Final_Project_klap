@@ -17,7 +17,7 @@ aws_secret_access_key = os.environ["AWS_SECRET_ACCESS_KEY"]
 
 df = pd.read_csv("sample.txt")
 
-def get_sent(review):
+    #def get_sent(review):
     #senti_df= pd.read_json("review")
     #senti_csv= senti_df.to_csv("/workspaces/IDS706_Final_Project_klap/senti.csv")
     # review.to_csv(
@@ -27,9 +27,8 @@ def get_sent(review):
     # result_df = pd.read_csv(smart_open('s3://myklapbucket/results.csv'), lineterminator='\n')
 
 
-def get_sentiment(review):
-    print(review.dtype)
-    print("This is working")
-    result=positive
+def get_sentiment():
+    result =print("This is working")
     return result
 
+get = get_sentiment()
